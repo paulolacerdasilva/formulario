@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Formulário</h1>
+        <form method="post" action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome completo:</label>
+                <input type="text" name="nome" id="idNome"/>
+                <label>CPF:</label>
+                <input type="text" name="cpf" id="idCpf"/>
+                <label>RG:</label>
+                <input type="text" name="rg" id="idRg"/>
+                <label>Data Nascimento:</label>
+                <input type="date" name="dataNasc" id="idDataNasc"/>
+                <label>Sexo:</label>
+                <label>Masculino</label>
+                <input type="radio" value="masculino" name="sexo"/>
+                <label>Feminino</label>
+                <input type="radio" value="feminino" name="sexo"/>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label>Rua:</label>
+                <input type="text" id="idRua" name="rua"/>
+                <label>Número:</label>
+                <input type="number" id="idNum" name="numero"/>
+                <label>Bairro:</label>
+                <input type="text" id="idBairro" name="bairro"/>
+                <label>Cidade:</label>
+                <input type="text" id="idCidade" name="cidade"/>
+                <label for="idUf">UF:</label>
+                <input list="uf" name="uf" id="idUf">
+
+                <datalist id="idUf">
+                l<option value="AC">
+                <option value="AL">
+                <option vaue="AP">
+                <option value="AM">
+                <option value="BA">
+                <option value="CE">
+                <option value="DF">
+                <option value="ES">
+                <option value="GO">
+                <option value="MA">
+                <option value="MT">
+                <option value="MS">
+                <option value="MG">
+                <option value="PA">
+                <option value="PB">
+                <option value="PR">
+                <option value="PE">
+                <option value="PI">
+                <option value="RJ">
+                <option value="RN">
+                <option value="RS">
+                <option value="RR">
+                <option value="SC">
+                <option value="SE">
+                <option value="TO">
+            </datalist>
+            </fieldset>
+        </form>
+    </body>
+</html>
